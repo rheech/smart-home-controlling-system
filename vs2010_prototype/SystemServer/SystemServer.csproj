@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsoleTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ConsoleTextBox.Designer.cs">
+      <DependentUpon>ConsoleTextBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmServer.cs">
       <SubType>Form</SubType>
     </Compile>

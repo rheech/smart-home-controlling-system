@@ -29,19 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgentUI));
-            this.btnCommand = new System.Windows.Forms.Button();
             this.wsClient = new AxMSWinsockLib.AxWinsock();
+            this.btnCommand = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.wsClient)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnCommand
-            // 
-            this.btnCommand.Location = new System.Drawing.Point(308, 219);
-            this.btnCommand.Name = "btnCommand";
-            this.btnCommand.Size = new System.Drawing.Size(64, 25);
-            this.btnCommand.TabIndex = 1;
-            this.btnCommand.Text = "button1";
-            this.btnCommand.UseVisualStyleBackColor = true;
             // 
             // wsClient
             // 
@@ -52,13 +43,22 @@
             this.wsClient.Size = new System.Drawing.Size(28, 28);
             this.wsClient.TabIndex = 2;
             // 
+            // btnCommand
+            // 
+            this.btnCommand.Location = new System.Drawing.Point(297, 221);
+            this.btnCommand.Name = "btnCommand";
+            this.btnCommand.Size = new System.Drawing.Size(75, 23);
+            this.btnCommand.TabIndex = 3;
+            this.btnCommand.Text = "button1";
+            this.btnCommand.UseVisualStyleBackColor = true;
+            // 
             // AgentUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 256);
-            this.Controls.Add(this.wsClient);
             this.Controls.Add(this.btnCommand);
+            this.Controls.Add(this.wsClient);
             this.Name = "AgentUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Client";
@@ -69,7 +69,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnCommand;
         private AxMSWinsockLib.AxWinsock wsClient;
+        private System.Windows.Forms.Button btnCommand;
     }
 }

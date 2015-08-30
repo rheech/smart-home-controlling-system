@@ -37,7 +37,7 @@
             // wsClient
             // 
             this.wsClient.Enabled = true;
-            this.wsClient.Location = new System.Drawing.Point(12, 217);
+            this.wsClient.Location = new System.Drawing.Point(12, 216);
             this.wsClient.Name = "wsClient";
             this.wsClient.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("wsClient.OcxState")));
             this.wsClient.Size = new System.Drawing.Size(28, 28);
@@ -45,9 +45,9 @@
             // 
             // btnCommand
             // 
-            this.btnCommand.Location = new System.Drawing.Point(245, 222);
+            this.btnCommand.Location = new System.Drawing.Point(308, 219);
             this.btnCommand.Name = "btnCommand";
-            this.btnCommand.Size = new System.Drawing.Size(75, 23);
+            this.btnCommand.Size = new System.Drawing.Size(64, 25);
             this.btnCommand.TabIndex = 1;
             this.btnCommand.Text = "button1";
             this.btnCommand.UseVisualStyleBackColor = true;
@@ -55,9 +55,9 @@
             // 
             // frmClient
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(332, 257);
+            this.ClientSize = new System.Drawing.Size(384, 256);
             this.Controls.Add(this.btnCommand);
             this.Controls.Add(this.wsClient);
             this.Name = "frmClient";

@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgentUI));
             this.wsClient = new AxMSWinsockLib.AxWinsock();
-            this.btnCommand = new System.Windows.Forms.Button();
+            this.btnConnect = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.wsClient)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,21 +43,22 @@
             this.wsClient.Size = new System.Drawing.Size(28, 28);
             this.wsClient.TabIndex = 2;
             // 
-            // btnCommand
+            // btnConnect
             // 
-            this.btnCommand.Location = new System.Drawing.Point(297, 221);
-            this.btnCommand.Name = "btnCommand";
-            this.btnCommand.Size = new System.Drawing.Size(75, 23);
-            this.btnCommand.TabIndex = 3;
-            this.btnCommand.Text = "button1";
-            this.btnCommand.UseVisualStyleBackColor = true;
+            this.btnConnect.Location = new System.Drawing.Point(297, 221);
+            this.btnConnect.Name = "btnConnect";
+            this.btnConnect.Size = new System.Drawing.Size(75, 23);
+            this.btnConnect.TabIndex = 3;
+            this.btnConnect.Text = "button1";
+            this.btnConnect.UseVisualStyleBackColor = true;
+            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
             // 
             // AgentUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 256);
-            this.Controls.Add(this.btnCommand);
+            this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.wsClient);
             this.Name = "AgentUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -70,6 +71,6 @@
         #endregion
 
         private AxMSWinsockLib.AxWinsock wsClient;
-        private System.Windows.Forms.Button btnCommand;
+        private System.Windows.Forms.Button btnConnect;
     }
 }

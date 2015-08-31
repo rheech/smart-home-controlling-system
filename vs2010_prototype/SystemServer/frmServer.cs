@@ -11,7 +11,7 @@ namespace SystemServer
 {
     public partial class frmServer : Form
     {
-        const int BROADCAST_PORT = 421;
+        const int BROADCAST_PORT = Communication.SocketSettings.BROADCAST_PORT;
 
         public frmServer()
         {

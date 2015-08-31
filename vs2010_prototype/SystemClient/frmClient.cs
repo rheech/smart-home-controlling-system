@@ -31,11 +31,5 @@ namespace SystemClient
             wsClient.RemotePort = BROADCAST_PORT;
             wsClient.SendData(message);
         }
-
-        private void wsClient_ConnectEvent(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }

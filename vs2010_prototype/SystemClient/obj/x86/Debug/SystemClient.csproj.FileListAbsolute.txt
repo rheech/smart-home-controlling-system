@@ -10,3 +10,9 @@ E:\workspaceEclipse\ControllingSystem\vs2010_prototype\SystemClient\obj\x86\Debu
 E:\workspaceEclipse\ControllingSystem\vs2010_prototype\SystemClient\obj\x86\Debug\AxInterop.MSWinsockLib.dll
 E:\workspaceEclipse\ControllingSystem\vs2010_prototype\SystemClient\obj\x86\Debug\SystemClient.csproj.ResolveComReference.cache
 E:\workspaceEclipse\ControllingSystem\vs2010_prototype\SystemClient\obj\x86\Debug\SystemClient.frmClient.resources
+K:\workspaceEclipse\ControllingSystem\vs2010_prototype\SystemClient\bin\Debug\SystemClient.exe
+K:\workspaceEclipse\ControllingSystem\vs2010_prototype\SystemClient\bin\Debug\SystemClient.pdb
+K:\workspaceEclipse\ControllingSystem\vs2010_prototype\SystemClient\bin\Debug\UserInterface.dll
+K:\workspaceEclipse\ControllingSystem\vs2010_prototype\SystemClient\bin\Debug\AxInterop.MSWinsockLib.dll
+K:\workspaceEclipse\ControllingSystem\vs2010_prototype\SystemClient\bin\Debug\Interop.MSWinsockLib.dll
+K:\workspaceEclipse\ControllingSystem\vs2010_prototype\SystemClient\bin\Debug\UserInterface.pdb

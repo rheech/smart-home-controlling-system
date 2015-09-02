@@ -1,15 +1,7 @@
-E:\workspaceEclipse\ControllingSystem\vs2010_prototype\SystemServer\obj\x86\Debug\Interop.MSWinsockLib.dll
-E:\workspaceEclipse\ControllingSystem\vs2010_prototype\SystemServer\obj\x86\Debug\AxInterop.MSWinsockLib.dll
-E:\workspaceEclipse\ControllingSystem\vs2010_prototype\SystemServer\obj\x86\Debug\SystemServer.csproj.ResolveComReference.cache
 E:\workspaceEclipse\ControllingSystem\vs2010_prototype\SystemServer\bin\Debug\SystemServer.exe
 E:\workspaceEclipse\ControllingSystem\vs2010_prototype\SystemServer\bin\Debug\SystemServer.pdb
 E:\workspaceEclipse\ControllingSystem\vs2010_prototype\SystemServer\bin\Debug\Interop.MSWinsockLib.dll
 E:\workspaceEclipse\ControllingSystem\vs2010_prototype\SystemServer\bin\Debug\AxInterop.MSWinsockLib.dll
-E:\workspaceEclipse\ControllingSystem\vs2010_prototype\SystemServer\obj\x86\Debug\SystemServer.frmServer.resources
-E:\workspaceEclipse\ControllingSystem\vs2010_prototype\SystemServer\obj\x86\Debug\SystemServer.Properties.Resources.resources
-E:\workspaceEclipse\ControllingSystem\vs2010_prototype\SystemServer\obj\x86\Debug\SystemServer.csproj.GenerateResource.Cache
-E:\workspaceEclipse\ControllingSystem\vs2010_prototype\SystemServer\obj\x86\Debug\SystemServer.exe
-E:\workspaceEclipse\ControllingSystem\vs2010_prototype\SystemServer\obj\x86\Debug\SystemServer.pdb
 K:\workspaceEclipse\ControllingSystem\vs2010_prototype\SystemServer\bin\Debug\SystemServer.exe
 K:\workspaceEclipse\ControllingSystem\vs2010_prototype\SystemServer\bin\Debug\SystemServer.pdb
 K:\workspaceEclipse\ControllingSystem\vs2010_prototype\SystemServer\bin\Debug\Interop.MSWinsockLib.dll

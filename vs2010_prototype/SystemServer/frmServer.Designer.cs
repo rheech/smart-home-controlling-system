@@ -32,9 +32,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmServer));
             this.btnRunServer = new System.Windows.Forms.Button();
             this.wsBroadcast = new AxMSWinsockLib.AxWinsock();
-            this.txtMessage = new SystemServer.ConsoleTextBox(this.components);
             this.lblStatus = new System.Windows.Forms.Label();
+            this.wsTCPClient = new AxMSWinsockLib.AxWinsock();
+            this.wsMainTCPServer = new AxMSWinsockLib.AxWinsock();
+            this.txtMessage = new SystemServer.ConsoleTextBox(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.wsBroadcast)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wsTCPClient)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wsMainTCPServer)).BeginInit();
             this.SuspendLayout();
             // 
             // btnRunServer
@@ -50,20 +54,12 @@
             // wsBroadcast
             // 
             this.wsBroadcast.Enabled = true;
-            this.wsBroadcast.Location = new System.Drawing.Point(216, 268);
+            this.wsBroadcast.Location = new System.Drawing.Point(162, 268);
             this.wsBroadcast.Name = "wsBroadcast";
             this.wsBroadcast.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("wsBroadcast.OcxState")));
             this.wsBroadcast.Size = new System.Drawing.Size(28, 28);
             this.wsBroadcast.TabIndex = 1;
             this.wsBroadcast.DataArrival += new AxMSWinsockLib.DMSWinsockControlEvents_DataArrivalEventHandler(this.wsBroadcast_DataArrival);
-            // 
-            // txtMessage
-            // 
-            this.txtMessage.Location = new System.Drawing.Point(12, 12);
-            this.txtMessage.Multiline = true;
-            this.txtMessage.Name = "txtMessage";
-            this.txtMessage.Size = new System.Drawing.Size(361, 239);
-            this.txtMessage.TabIndex = 2;
             // 
             // lblStatus
             // 
@@ -74,11 +70,44 @@
             this.lblStatus.TabIndex = 3;
             this.lblStatus.Text = "Ready";
             // 
+            // wsTCPClient
+            // 
+            this.wsTCPClient.Enabled = true;
+            this.wsTCPClient.Location = new System.Drawing.Point(196, 268);
+            this.wsTCPClient.Name = "wsTCPClient";
+            this.wsTCPClient.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("wsTCPClient.OcxState")));
+            this.wsTCPClient.Size = new System.Drawing.Size(28, 28);
+            this.wsTCPClient.TabIndex = 4;
+            this.wsTCPClient.Error += new AxMSWinsockLib.DMSWinsockControlEvents_ErrorEventHandler(this.wsTCPClient_Error);
+            // 
+            // wsMainTCPServer
+            // 
+            this.wsMainTCPServer.Enabled = true;
+            this.wsMainTCPServer.Location = new System.Drawing.Point(230, 268);
+            this.wsMainTCPServer.Name = "wsMainTCPServer";
+            this.wsMainTCPServer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("wsMainTCPServer.OcxState")));
+            this.wsMainTCPServer.Size = new System.Drawing.Size(28, 28);
+            this.wsMainTCPServer.TabIndex = 5;
+            this.wsMainTCPServer.Error += new AxMSWinsockLib.DMSWinsockControlEvents_ErrorEventHandler(this.wsMainTCPServer_Error);
+            this.wsMainTCPServer.ConnectEvent += new System.EventHandler(this.wsMainTCPServer_ConnectEvent);
+            this.wsMainTCPServer.ConnectionRequest += new AxMSWinsockLib.DMSWinsockControlEvents_ConnectionRequestEventHandler(this.wsMainTCPServer_ConnectionRequest);
+            this.wsMainTCPServer.CloseEvent += new System.EventHandler(this.wsMainTCPServer_CloseEvent);
+            // 
+            // txtMessage
+            // 
+            this.txtMessage.Location = new System.Drawing.Point(12, 12);
+            this.txtMessage.Multiline = true;
+            this.txtMessage.Name = "txtMessage";
+            this.txtMessage.Size = new System.Drawing.Size(361, 239);
+            this.txtMessage.TabIndex = 2;
+            // 
             // frmServer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(385, 308);
+            this.Controls.Add(this.wsMainTCPServer);
+            this.Controls.Add(this.wsTCPClient);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.txtMessage);
             this.Controls.Add(this.wsBroadcast);
@@ -89,6 +118,8 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmServer_FormClosing);
             this.Load += new System.EventHandler(this.frmServer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.wsBroadcast)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wsTCPClient)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wsMainTCPServer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -100,6 +131,8 @@
         private AxMSWinsockLib.AxWinsock wsBroadcast;
         private ConsoleTextBox txtMessage;
         private System.Windows.Forms.Label lblStatus;
+        private AxMSWinsockLib.AxWinsock wsTCPClient;
+        private AxMSWinsockLib.AxWinsock wsMainTCPServer;
     }
 }
 

@@ -16,6 +16,3 @@ K:\workspaceEclipse\ControllingSystem\vs2010_prototype\SystemClient\bin\Debug\Us
 K:\workspaceEclipse\ControllingSystem\vs2010_prototype\SystemClient\bin\Debug\AxInterop.MSWinsockLib.dll
 K:\workspaceEclipse\ControllingSystem\vs2010_prototype\SystemClient\bin\Debug\Interop.MSWinsockLib.dll
 K:\workspaceEclipse\ControllingSystem\vs2010_prototype\SystemClient\bin\Debug\UserInterface.pdb
-K:\workspaceEclipse\ControllingSystem\vs2010_prototype\SystemClient\obj\x86\Debug\Interop.MSWinsockLib.dll
-K:\workspaceEclipse\ControllingSystem\vs2010_prototype\SystemClient\obj\x86\Debug\AxInterop.MSWinsockLib.dll
-K:\workspaceEclipse\ControllingSystem\vs2010_prototype\SystemClient\obj\x86\Debug\SystemClient.csproj.ResolveComReference.cache

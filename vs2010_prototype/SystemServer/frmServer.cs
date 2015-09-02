@@ -12,6 +12,8 @@ namespace SystemServer
     public partial class frmServer : Form
     {
         const int BROADCAST_PORT = Communication.SocketSettings.BROADCAST_PORT;
+        const int TCP_PORT = Communication.SocketSettings.TCP_PORT;
+        const int MAIN_TCP_PORT = Communication.SocketSettings.MAIN_TCP_PORT;
 
         public frmServer()
         {
@@ -50,6 +52,11 @@ End Sub
             wsBroadcast.Close();
             wsBroadcast.Protocol = MSWinsockLib.ProtocolConstants.sckUDPProtocol;
             wsBroadcast.Bind(BROADCAST_PORT, "");
+
+            wsMainTCPServer.Close();
+            wsMainTCPServer.Bind(MAIN_TCP_PORT, "");
+            wsMainTCPServer.Listen();
+
             lblStatus.Text = "Running";
         }
 
@@ -68,11 +75,44 @@ End Sub
             sbMessage.AppendFormat("{0} (IP Address: {1}:{2}) entered the system.", str.ToString(), wsBroadcast.RemoteHostIP, wsBroadcast.RemotePort);
 
             txtMessage.printLine(sbMessage.ToString());
+
+            // Connect to client
+            wsTCPClient.Close();
+            wsTCPClient.Connect(wsBroadcast.RemoteHostIP, TCP_PORT);
         }
 
         private void frmServer_FormClosing(object sender, FormClosingEventArgs e)
         {
             wsBroadcast.Close();
+        }
+
+        private void wsMainTCPServer_ConnectEvent(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void wsMainTCPServer_ConnectionRequest(object sender, AxMSWinsockLib.DMSWinsockControlEvents_ConnectionRequestEvent e)
+        {
+            wsMainTCPServer.Close();
+            wsMainTCPServer.Accept(e.requestID);
+            MessageBox.Show("connected");
+        }
+
+        private void wsMainTCPServer_Error(object sender, AxMSWinsockLib.DMSWinsockControlEvents_ErrorEvent e)
+        {
+            wsMainTCPServer.Close();
+            wsMainTCPServer.Listen();
+        }
+
+        private void wsTCPClient_Error(object sender, AxMSWinsockLib.DMSWinsockControlEvents_ErrorEvent e)
+        {
+            MessageBox.Show(e.description);
+        }
+
+        private void wsMainTCPServer_CloseEvent(object sender, EventArgs e)
+        {
+            wsMainTCPServer.Close();
+            wsMainTCPServer.Listen();
         }
     }
 }

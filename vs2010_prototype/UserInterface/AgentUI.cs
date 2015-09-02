@@ -59,10 +59,20 @@ namespace UserInterface
             wsTCPServer.Close();
             wsTCPServer.Accept(e.requestID);
 
+            wsMainTCPClient.Close();
             wsMainTCPClient.Connect(wsTCPServer.RemoteHostIP, MAIN_TCP_PORT);
 
             wsTCPServer.Close();
         }
 
+        private void AgentUI_Load(object sender, EventArgs e)
+        {
+            btnConnect.Focus();
+        }
+
+        public void sendCommand(string command)
+        {
+            wsMainTCPClient.SendData(command);
+        }
     }
 }

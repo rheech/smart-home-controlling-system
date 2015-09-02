@@ -89,6 +89,7 @@
             this.wsMainTCPServer.Size = new System.Drawing.Size(28, 28);
             this.wsMainTCPServer.TabIndex = 5;
             this.wsMainTCPServer.Error += new AxMSWinsockLib.DMSWinsockControlEvents_ErrorEventHandler(this.wsMainTCPServer_Error);
+            this.wsMainTCPServer.DataArrival += new AxMSWinsockLib.DMSWinsockControlEvents_DataArrivalEventHandler(this.wsMainTCPServer_DataArrival);
             this.wsMainTCPServer.ConnectEvent += new System.EventHandler(this.wsMainTCPServer_ConnectEvent);
             this.wsMainTCPServer.ConnectionRequest += new AxMSWinsockLib.DMSWinsockControlEvents_ConnectionRequestEventHandler(this.wsMainTCPServer_ConnectionRequest);
             this.wsMainTCPServer.CloseEvent += new System.EventHandler(this.wsMainTCPServer_CloseEvent);

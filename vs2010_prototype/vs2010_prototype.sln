@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemServer", "SystemServe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInterface", "UserInterface\UserInterface.csproj", "{02208E63-1B01-47CC-A59D-6A436610EE5E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client_Heater", "Client_Heater\Client_Heater.csproj", "{910056B9-5738-4923-A7AF-3619D5FCC4E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client_Humidifier", "Client_Humidifier\Client_Humidifier.csproj", "{BBC1FE95-8D57-48E9-B474-2A7130F973CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +51,26 @@ Global
 		{02208E63-1B01-47CC-A59D-6A436610EE5E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{02208E63-1B01-47CC-A59D-6A436610EE5E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{02208E63-1B01-47CC-A59D-6A436610EE5E}.Release|x86.ActiveCfg = Release|Any CPU
+		{910056B9-5738-4923-A7AF-3619D5FCC4E9}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{910056B9-5738-4923-A7AF-3619D5FCC4E9}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{910056B9-5738-4923-A7AF-3619D5FCC4E9}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{910056B9-5738-4923-A7AF-3619D5FCC4E9}.Debug|x86.ActiveCfg = Debug|x86
+		{910056B9-5738-4923-A7AF-3619D5FCC4E9}.Debug|x86.Build.0 = Debug|x86
+		{910056B9-5738-4923-A7AF-3619D5FCC4E9}.Release|Any CPU.ActiveCfg = Release|x86
+		{910056B9-5738-4923-A7AF-3619D5FCC4E9}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{910056B9-5738-4923-A7AF-3619D5FCC4E9}.Release|Mixed Platforms.Build.0 = Release|x86
+		{910056B9-5738-4923-A7AF-3619D5FCC4E9}.Release|x86.ActiveCfg = Release|x86
+		{910056B9-5738-4923-A7AF-3619D5FCC4E9}.Release|x86.Build.0 = Release|x86
+		{BBC1FE95-8D57-48E9-B474-2A7130F973CA}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{BBC1FE95-8D57-48E9-B474-2A7130F973CA}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{BBC1FE95-8D57-48E9-B474-2A7130F973CA}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{BBC1FE95-8D57-48E9-B474-2A7130F973CA}.Debug|x86.ActiveCfg = Debug|x86
+		{BBC1FE95-8D57-48E9-B474-2A7130F973CA}.Debug|x86.Build.0 = Debug|x86
+		{BBC1FE95-8D57-48E9-B474-2A7130F973CA}.Release|Any CPU.ActiveCfg = Release|x86
+		{BBC1FE95-8D57-48E9-B474-2A7130F973CA}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{BBC1FE95-8D57-48E9-B474-2A7130F973CA}.Release|Mixed Platforms.Build.0 = Release|x86
+		{BBC1FE95-8D57-48E9-B474-2A7130F973CA}.Release|x86.ActiveCfg = Release|x86
+		{BBC1FE95-8D57-48E9-B474-2A7130F973CA}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,6 +1,6 @@
-﻿namespace SystemClient
+﻿namespace Client_Heater
 {
-    partial class frmClient
+    partial class frmHeaterClient
     {
         /// <summary>
         /// Required designer variable.
@@ -28,35 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnReleaseHeat = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
             // 
             // 
-            // splitContainer1.Panel2
+            // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.button2);
+            this.splitContainer1.Panel1.Controls.Add(this.btnReleaseHeat);
             // 
-            // button2
+            // btnReleaseHeat
             // 
-            this.button2.Location = new System.Drawing.Point(38, 47);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnReleaseHeat.Location = new System.Drawing.Point(138, 80);
+            this.btnReleaseHeat.Name = "btnReleaseHeat";
+            this.btnReleaseHeat.Size = new System.Drawing.Size(148, 43);
+            this.btnReleaseHeat.TabIndex = 0;
+            this.btnReleaseHeat.Text = "Release Heat";
+            this.btnReleaseHeat.UseVisualStyleBackColor = true;
+            this.btnReleaseHeat.Click += new System.EventHandler(this.btnReleaseHeat_Click);
             // 
-            // frmClient
+            // frmHeaterClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(408, 253);
-            this.Name = "frmClient";
-            this.splitContainer1.Panel2.ResumeLayout(false);
+            this.Name = "frmHeaterClient";
+            this.Text = "Client Heater";
+            this.splitContainer1.Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -65,6 +67,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnReleaseHeat;
     }
 }
+

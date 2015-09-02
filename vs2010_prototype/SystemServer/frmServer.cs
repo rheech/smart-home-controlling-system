@@ -47,7 +47,8 @@ Private Sub wsBroadcast_Error(ByVal Number As Integer, Description As String, By
     lblStatus.Caption = "Error"
 End Sub
 */
-        private void btnRunServer_Click(object sender, EventArgs e)
+
+        private void InitSockets()
         {
             wsBroadcast.Close();
             wsBroadcast.Protocol = MSWinsockLib.ProtocolConstants.sckUDPProtocol;
@@ -58,6 +59,11 @@ End Sub
             wsMainTCPServer.Listen();
 
             lblStatus.Text = "Running";
+        }
+
+        private void btnRunServer_Click(object sender, EventArgs e)
+        {
+            InitSockets();
         }
 
         private void frmServer_Load(object sender, EventArgs e)
@@ -75,6 +81,8 @@ End Sub
             sbMessage.AppendFormat("{0} (IP Address: {1}:{2}) entered the system.", str.ToString(), wsBroadcast.RemoteHostIP, wsBroadcast.RemotePort);
 
             txtMessage.printLine(sbMessage.ToString());
+
+            InitSockets();
 
             // Connect to client
             wsTCPClient.Close();
@@ -95,7 +103,7 @@ End Sub
         {
             wsMainTCPServer.Close();
             wsMainTCPServer.Accept(e.requestID);
-            MessageBox.Show("connected");
+            txtMessage.printLine(String.Format("Connected to {0}:{1}.", wsMainTCPServer.RemoteHostIP, wsMainTCPServer.RemotePort));
         }
 
         private void wsMainTCPServer_Error(object sender, AxMSWinsockLib.DMSWinsockControlEvents_ErrorEvent e)
@@ -106,13 +114,24 @@ End Sub
 
         private void wsTCPClient_Error(object sender, AxMSWinsockLib.DMSWinsockControlEvents_ErrorEvent e)
         {
-            MessageBox.Show(e.description);
+            txtMessage.printLine(String.Format("Socket error: {0}", e.description));
         }
 
         private void wsMainTCPServer_CloseEvent(object sender, EventArgs e)
         {
             wsMainTCPServer.Close();
             wsMainTCPServer.Listen();
+        }
+
+        private void wsMainTCPServer_DataArrival(object sender, AxMSWinsockLib.DMSWinsockControlEvents_DataArrivalEvent e)
+        {
+            object oData = "";
+            string sData;
+            wsMainTCPServer.GetData(ref oData);
+            sData = oData.ToString();
+
+            txtMessage.printLine(String.Format("Received data from {0}:{1}: {2}",
+                        wsMainTCPServer.RemoteHostIP, wsMainTCPServer.RemotePort, sData));
         }
     }
 }

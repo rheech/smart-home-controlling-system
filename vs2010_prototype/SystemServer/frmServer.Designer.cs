@@ -43,9 +43,9 @@
             // 
             // btnRunServer
             // 
-            this.btnRunServer.Location = new System.Drawing.Point(283, 268);
+            this.btnRunServer.Location = new System.Drawing.Point(330, 247);
             this.btnRunServer.Name = "btnRunServer";
-            this.btnRunServer.Size = new System.Drawing.Size(90, 28);
+            this.btnRunServer.Size = new System.Drawing.Size(105, 26);
             this.btnRunServer.TabIndex = 0;
             this.btnRunServer.Text = "Run Server";
             this.btnRunServer.UseVisualStyleBackColor = true;
@@ -54,7 +54,7 @@
             // wsBroadcast
             // 
             this.wsBroadcast.Enabled = true;
-            this.wsBroadcast.Location = new System.Drawing.Point(162, 268);
+            this.wsBroadcast.Location = new System.Drawing.Point(169, 247);
             this.wsBroadcast.Name = "wsBroadcast";
             this.wsBroadcast.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("wsBroadcast.OcxState")));
             this.wsBroadcast.Size = new System.Drawing.Size(28, 28);
@@ -64,16 +64,16 @@
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(12, 276);
+            this.lblStatus.Location = new System.Drawing.Point(14, 255);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(38, 13);
+            this.lblStatus.Size = new System.Drawing.Size(41, 12);
             this.lblStatus.TabIndex = 3;
             this.lblStatus.Text = "Ready";
             // 
             // wsTCPClient
             // 
             this.wsTCPClient.Enabled = true;
-            this.wsTCPClient.Location = new System.Drawing.Point(196, 268);
+            this.wsTCPClient.Location = new System.Drawing.Point(203, 247);
             this.wsTCPClient.Name = "wsTCPClient";
             this.wsTCPClient.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("wsTCPClient.OcxState")));
             this.wsTCPClient.Size = new System.Drawing.Size(28, 28);
@@ -83,7 +83,7 @@
             // wsMainTCPServer
             // 
             this.wsMainTCPServer.Enabled = true;
-            this.wsMainTCPServer.Location = new System.Drawing.Point(230, 268);
+            this.wsMainTCPServer.Location = new System.Drawing.Point(237, 247);
             this.wsMainTCPServer.Name = "wsMainTCPServer";
             this.wsMainTCPServer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("wsMainTCPServer.OcxState")));
             this.wsMainTCPServer.Size = new System.Drawing.Size(28, 28);
@@ -96,17 +96,18 @@
             // 
             // txtMessage
             // 
-            this.txtMessage.Location = new System.Drawing.Point(12, 12);
+            this.txtMessage.Location = new System.Drawing.Point(14, 11);
             this.txtMessage.Multiline = true;
             this.txtMessage.Name = "txtMessage";
-            this.txtMessage.Size = new System.Drawing.Size(361, 239);
+            this.txtMessage.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtMessage.Size = new System.Drawing.Size(420, 221);
             this.txtMessage.TabIndex = 2;
             // 
             // frmServer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(385, 308);
+            this.ClientSize = new System.Drawing.Size(449, 284);
             this.Controls.Add(this.wsMainTCPServer);
             this.Controls.Add(this.wsTCPClient);
             this.Controls.Add(this.lblStatus);

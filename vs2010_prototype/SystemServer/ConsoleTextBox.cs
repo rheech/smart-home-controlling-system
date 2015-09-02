@@ -30,6 +30,8 @@ namespace SystemServer
         {
             sbText.AppendFormat("{0}\r\n", message);
             this.Text = sbText.ToString();
+            this.SelectionStart = this.Text.Length;
+            this.ScrollToCaret();
         }
 
         public void clear()

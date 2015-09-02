@@ -43,7 +43,7 @@
             // 
             // btnReleaseMoist
             // 
-            this.btnReleaseMoist.Location = new System.Drawing.Point(138, 80);
+            this.btnReleaseMoist.Location = new System.Drawing.Point(130, 81);
             this.btnReleaseMoist.Name = "btnReleaseMoist";
             this.btnReleaseMoist.Size = new System.Drawing.Size(148, 43);
             this.btnReleaseMoist.TabIndex = 0;

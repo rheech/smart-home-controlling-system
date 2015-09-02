@@ -43,7 +43,7 @@
             // 
             // btnReleaseHeat
             // 
-            this.btnReleaseHeat.Location = new System.Drawing.Point(138, 80);
+            this.btnReleaseHeat.Location = new System.Drawing.Point(130, 81);
             this.btnReleaseHeat.Name = "btnReleaseHeat";
             this.btnReleaseHeat.Size = new System.Drawing.Size(148, 43);
             this.btnReleaseHeat.TabIndex = 0;
